@@ -1,0 +1,510 @@
+html{height:100%;}
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{color:#6BB5A6;font-size: 40px;}
+.logo:hover{color:#f6e4a9;}
+.slogan{font-size:22px;margin:0;}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    bottom: 0;
+    background-color:#6BB5A6;   
+}
+
+footer p{margin:1% 5%;color:#ffffff;}
+
+nav{
+    display:flex;
+    justify-content: right;
+    padding:0.8% 0; 
+    background-color: #F0A36C;
+}
+
+/*Enlace nav*/
+nav a{margin-right:5%;text-decoration: none;color:black;}
+nav a:hover{color:#ffffff;}
+
+/*Páginas principal*/
+.validacion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url("img/portada.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*Titulo acceder*/
+.validacion h1{font-size:40px;padding:0 13%;color:#ffff;}
+
+.formlogin{
+    
+    backdrop-filter: blur(6px);
+    border:3px #6BB5A6 solid;
+    padding:2% 5%;
+    margin-bottom:10%;
+    color:#ffffff;
+}
+
+.formlogin p, input{font-size:18px;}
+.inpt{width:100%;}
+
+/*Submits*/
+.smit{
+    margin-top:15%;
+    font-size:18px;
+    margin-left: 30%;
+    margin-bottom:13%;
+    background-color:#F0A36C;
+    border:none;
+    border-radius: 5%;
+    padding:2% 4%;
+    color:#ffffff;
+}
+.smit:hover{background-color:#f6e4a9;}
+
+.smitad{
+    margin-top:15%;
+    font-size:18px;
+    margin-left: 25%;
+    margin-bottom:13%;
+    background-color:#F0A36C;
+    border:none;
+    border-radius: 5%;
+    padding:2% 4%;
+    color:#ffff;
+}
+
+.smitad:hover{background-color:#f6e4a9;}
+
+/*Alumno profe*/
+.tipo{display:inline;margin-top: 10%;}
+#profe{margin-left:8%;}
+
+/*Href registrarse*/
+.alta{display: flex;justify-content: right;color:#ffff;}
+
+
+/************* ZONA ADMIN ******************/
+main{
+    height:100%;}
+
+.mainadmin{
+    background-image: url("img/admin0.png");
+    background-size: cover;
+    
+}
+.content{
+    display:grid;
+    grid-template-columns:20% 20%;
+    grid-gap:6rem;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    
+}
+.content  div:nth-child(1),.content div:nth-child(2){
+    display:grid;
+    grid-template-rows:(20%, 3fr);
+    grid-gap:2rem;
+    align-items: center;
+}
+
+.content  div:nth-child(1) a, .content div:nth-child(2) a{
+    border-radius: 15px;
+    padding:12%;
+    text-decoration: none;
+    font-size:20px;
+    color:#ffffff;
+    
+    
+}
+
+.content div:nth-child(2) a:hover, .content div:nth-child(1) a:hover{
+    transform: scale(1.1);
+    
+}
+
+.der a:nth-child(2),.izq a:nth-child(2){
+    border:3px solid #6BB5A6;
+    background-color:rgba(104, 181, 166, 0.6);
+    /*border:3px solid #F0A36C;
+    background-color:rgba(240, 163, 108, 0.6);*/
+    
+    
+}
+
+/*.der a:nth-child(3),.izq a:nth-child(3){
+    border:3px solid #F0A36C;
+    background-color:rgba(240, 163, 108, 0.6);
+
+}*/
+
+.izq h1, .der h1{
+    color:black;
+    margin-top:30%;
+    
+}
+.der a:last-child,.izq a:last-child{
+    margin-bottom:40%;
+    /*border: 3px #F06968 solid;
+    background-color:rgba(240, 105, 104, 0.6);*/
+    border:3px solid #F0A36C;
+    background-color:rgba(240, 163, 108, 0.6);
+    
+
+}
+
+/************BUSCADOR************/
+section{
+    padding-bottom:0.5%;
+    padding-top:0.5%;
+    background-color: #f6e4a9;
+}
+section form{
+    margin-left:2%;
+}
+
+
+/***********TABLAS GESTIÓN*************/
+.bgadmin{
+    background-image:url(img/bgGest.png);
+    background-size: cover;
+}
+.tabla{
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:60%;
+    /*height:60%;*/
+    margin:auto;
+    margin-top:3%;
+}
+
+.tabla tr,.tabla td{
+    text-align: center;
+    border:1px solid black;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+.tabla tr:nth-child(2n+1){
+    background-color: rgb(225, 224, 224,2);
+}
+
+
+/**************EDITAR PROFE**************/
+.edit{
+
+    border: 3px solid #6BB5A6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:3%;
+    margin-bottom:5%;
+    backdrop-filter: blur(2px);
+}
+
+.smitedit{
+    background-color:#F0A36C;
+    border:none;
+    border-radius: 5%;
+    padding:2% 4%;
+    color:#ffffff;
+    margin-bottom:5%;
+}
+.smitedit:hover{
+    background-color:#f6e4a9;
+    cursor: pointer;
+}
+.bgEdit{
+    background-image: url(img/bgEdit.png);
+    background-size: cover;
+}
+
+/***********************EDITAR CURSO**********************/
+.editCurso{
+    display:grid;
+    grid-template-columns:50% 50%;
+    width: 40%;
+    border: 3px solid #6BB5A6;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom:3%;
+    padding-top:2%;
+    margin-top:5%;
+    margin-bottom:5%;
+    backdrop-filter: blur(2px);
+    
+}
+.editcurs{
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+    margin-top:7%;
+    background-color:#F0A36C;
+    border:none;
+    border-radius: 5%;
+    padding:2% 4%;
+    color:#ffffff;
+}
+.editcurs:hover{
+    background-color:#f6e4a9;
+    cursor: pointer;
+}
+
+/************CREAR ALUM/CURSOS**********/
+
+.crear{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 10%;
+    border: 3px solid #6BB5A6;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    margin-top:4%;
+    margin-bottom:7%;
+    padding-top:3%;
+    backdrop-filter: blur(6px);
+    
+}
+.bgform{
+    background-image:url(img/bgForm.png);
+    background-size: cover;
+}
+.crearsub{
+    margin-top:20%;
+    margin-bottom:20%;
+    width:80%;
+    
+}
+.crearsub input{
+    padding:4%;
+    padding-left:20%;
+    padding-right:20%;
+    background-color: #F0A36C;
+    color:#fff;
+    border:none;
+    border-radius: 5%;
+
+}
+
+.crearsub input:hover{
+    background-color:#f6e4a9;
+    cursor: pointer;
+}
+
+form div select{
+    margin-top:1%;
+}
+.s{padding-top:5%;}
+
+/****************************EDITAR FOTO******************/
+.formfoto{
+    display: grid;
+    margin: 0 auto;
+    margin-top:8%;
+    padding:2%;
+    text-align: center;
+    justify-content: center;
+    width:20%;
+    border: 3px solid #6BB5A6;
+    backdrop-filter: blur(2px);
+
+}
+
+/******************************************CALENDARIO**********************************************/
+.calendar{
+    width:30%;
+    float:right;
+    margin-right:8%;
+    margin-top:-30%;
+    border:2px solid #F0A36C;
+}
+.calendarday{
+    padding:2%;
+}
+
+/**************************************************************ALTA ALUMN****************************************************/
+.bgAlta h1{
+    margin:0 auto;
+    text-align: center;
+    margin-top:2%;
+    margin-bottom:-2%;
+}
+.bgAlta:nth-child(2){
+    margin-bottom:10% !important;
+}
+
+.bgAlta{
+    background-image: url(img/bgEdit.png);
+    background-size: cover;
+}
+/******************************************************INTERIOR ALUMNE*******************************************/
+/*.interioralumne{
+    margin-left:2%;
+    width:50%;
+    height:90%;
+}*/
+.interioralumne h1,.interioralumne p{
+    margin-left:2%;
+    margin-bottom:2%;
+    padding-bottom:2%;
+}
+.interioralumne a{
+    padding:5%;
+    margin:2%;
+    border: 2px solid #6BB5A6;
+    background-color:rgba(104, 181, 166, 1);
+    display: block;
+    border-radius: 2%;
+    text-decoration: none;
+    color:#ffffff;
+    font-size:18px;
+    
+}
+
+.interioralumne a:hover{
+    transform: scale(1.02);
+}
+
+.interior{
+    display:grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 7%;
+    justify-content: center;
+    width:100%;
+    margin:0 auto;
+    padding-bottom:5%;
+    padding-top:1%;
+    background-image: url(img/bgcurs.png);
+    background-size:cover;
+    height:100%;
+}
+
+/******************************************************CURSOS ACABADOS***************************************/
+.finished{
+    background-color: #a2f1ae !important;
+}
+.notqual{
+    background-color: #f6e4a9 !important;
+}
+
+
+.map{
+    width:100%;
+    margin-right:5%;
+    height:90%;
+    margin-top:5%;
+}
+.interior .mapzone h3,.interior .mapzone a {
+    color:#000;
+}
+.interior .mapzone a{
+    text-decoration: none;
+}
+.interior .mapzone a:hover{
+    color:#ffffff;
+    transform: scale(1.1);
+}
+
+
+.mapzone{
+    padding:4%;
+    margin-top:5%;
+    padding-bottom:27%;
+    border: 3px solid #6BB5A6;
+    backdrop-filter: blur(6px);
+}
+
+/************ICONOS *****/
+.mensaje{
+    width:5%;
+    height:7%;
+    margin-right:3%;
+    margin-top:3%;
+}
+
+/************************************************************************************ CURSOS ALUMNE *******************************************************************************/
+.bgcursos{
+    background-image: url(img/bgGest.png);
+    background-size: cover;
+}
+.back{background-color:rgba(104, 181, 166, 0.6) !important}; /*IMPORTANT SI NO COGE LOS PARES*/
+/************************************************************************TITLE ID***********************************/
+.center{
+    text-align: center;
+}
+
+
+
+/************************************************PROFESSOR INTERIOR******************************************/
+.prof{
+    border:3px solid #F0A36C;
+    background-color: rgba(240, 163, 108, 0.3);
+    border-radius: 5%;
+    width:90%;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom:5%;
+    margin-top:15%;
+
+}
+.prof:hover{
+    background-color: rgba(240, 163, 108, 0.7);
+    transform: scale(1.02);
+}
+.prof div{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.superprof{
+    background-image: url(img/bgcursos.png);
+    background-size: cover;
+    padding-bottom:25%;
+    justify-content: center;
+    
+}
+.superprof h1{
+    margin-left:5%;
+    padding-top:0.3%;
+}
+
+.sp{
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    justify-content: center;
+
+}
+
+
+/**********************************************   PASAR LLISTA ETC    **************************************/
+.bgprof{
+    background-image: url(img/bgGest.png);
+    background-size: cover;
+}
